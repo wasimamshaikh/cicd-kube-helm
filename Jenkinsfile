@@ -1,11 +1,12 @@
 pipeline {
 
     agent any
-/*
+
 	tools {
-        maven "maven3"
+        maven "MAVEN3"
+        jdk "OracleJDK8"
     }
-*/
+
     environment {
         registry = "334381385047.dkr.ecr.us-east-1.amazonaws.com/cicd-helm"
     }
