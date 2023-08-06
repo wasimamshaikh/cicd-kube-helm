@@ -7,9 +7,9 @@ pipeline {
         jdk "OracleJDK8"
     }
 
- /*   environment {
+    environment {
         registry = "334381385047.dkr.ecr.us-east-1.amazonaws.com/cicd-helm"
-    } */
+    }
 
     stages{
 
