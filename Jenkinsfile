@@ -48,7 +48,7 @@ pipeline {
             }
         }
 
-     /*   stage('CODE ANALYSIS with SONARQUBE') {
+        stage('CODE ANALYSIS with SONARQUBE') {
 
             environment {
                 scannerHome = tool 'mysonarscanner4'
@@ -71,7 +71,7 @@ pipeline {
                 }
             }
         }
-        stage ('Build Docker App Image ') {
+      /*  stage ('Build Docker App Image ') {
             steps {
                 script {
                     dockerImage = docker.build registry
