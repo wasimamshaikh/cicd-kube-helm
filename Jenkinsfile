@@ -7,9 +7,9 @@ pipeline {
         jdk "OracleJDK8"
     }
 
-    environment {
+ /*   environment {
         registry = "334381385047.dkr.ecr.us-east-1.amazonaws.com/cicd-helm"
-    }
+    } */
 
     stages{
 
@@ -54,7 +54,7 @@ pipeline {
                 scannerHome = tool 'mysonarscanner4'
             }
 
-            steps {
+     /*       steps {
                 withSonarQubeEnv('sonar-pro') {
                     sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile \
                    -Dsonar.projectName=vprofile-repo \
@@ -93,6 +93,6 @@ pipeline {
                     sh "helm upgrade --install --force vprofile-stack helm/vprofilecharts --set appimage=${registry}:${BUILD_NUMBER} --namespace prod"
                 }
             }
-        }
+        } */
     }
 }
